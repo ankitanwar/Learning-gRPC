@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package right;
 
+option go_package="github.com/ankitanwar/Learning-gRPC/tree/master/simple";
+
 message Person{
     int32 age=1;
     string first_name=2;
