@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	right "Grpc/simple"
+	"fmt"
+)
 
 func main() {
 	fmt.Println("First Protocol Buffer")
@@ -9,11 +12,19 @@ func main() {
 
 func doSimple() {
 	sm := right.Person{
-		age:         22,
-		first_name:  "first",
-		last_name:   "last",
-		is_verified: true,
+		Age:              22,
+		FirstName:        "hello",
+		LastName:         "world",
+		IsProfileVerifid: true,
+	}
+
+	gg := right.Person{
+		Age:              22,
+		FirstName:        "hello",
+		LastName:         "world",
+		IsProfileVerifid: true,
 	}
 
 	fmt.Println(sm)
+	fmt.Println(gg)
 }
